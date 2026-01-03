@@ -1,0 +1,219 @@
+/* RESET */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* CODE */
+
+:root {
+    --font-color: #111;
+    --main-color: #00ff03;
+}
+
+* {
+    font-family: 'Roboto Mono';
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 5px;
+    background-color: #00ff03;
+    box-shadow: 0px 0px 10px 3px #999;
+    z-index: 1;
+
+    background-image: linear-gradient(to right, #00c403, var(--main-color))
+}
+.logo-hortiflix {
+    width: clamp(125px, 13vw, 15vw)
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+
+    padding: 20px;
+    width: 100vw;
+
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), 
+                                                rgba(255, 255, 255, 0.9)), 
+                                                url(assets/imagemDeFundo.jpg);
+    background-size: contain;
+    background-color: white;
+}
+.fotos-do-hortifruti {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.fotoDoHortifruti {
+    width: clamp(250px, 40vw, 600px);
+    border: 1px solid var(--font-color);
+    border-radius: 10px;
+}
+h1 {
+    white-space: nowrap;
+    font-size: clamp(1rem, 4vw, 1.8rem);
+    font-weight:bold;
+
+    color: var(--font-color);
+}
+.secao-verde {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+
+    width: 100vw;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 3px #999;
+
+    background-image: linear-gradient(to right, rgba(0, 255, 3, 0.5), 
+                                                rgba(255, 255, 255, 0.2));
+}
+.produtos p {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    text-align: center;
+}
+.cestas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+.cesta {
+    width: clamp(150px, 30vw, 250px);
+}
+.h2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
+}
+.linha-vermelha {
+    width: clamp(100px, 50vw, 200px);
+    height: 1.5px;
+    background-color: red;
+    border-radius: 10px;
+}
+.localizacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100vw;
+}
+.localizacao .h2-container {
+    margin-bottom: 30px;
+}
+.endereco-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.google-maps {
+    width: clamp(200px, 80vw, 500px);
+    height: clamp(200px, 40vw, 400px);
+    box-shadow: 0px 0px 5px 3px #999;
+}
+.endereco-container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    list-style-type: none;
+    gap: 10px;
+}
+ul li {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    color: #333;
+    font-style: italic;
+}
+ul span {
+    color: black;
+}
+footer {
+    background-color: darkgrey;
+}
+.contato {
+    margin-bottom: 50px;
+}
+.botao-whatsapp {
+    position: fixed;
+    width: clamp(50px, 10vw, 75px);
+    bottom: 30px;
+    right: 30px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding: 10px;
+}
+footer p {
+    color: whitesmoke;
+}
