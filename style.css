@@ -103,7 +103,7 @@ main {
     gap: 5px;
 }
 .fotoDoHortifruti {
-    width: clamp(250px, 40vw, 600px);
+    width: clamp(500px, 40vw, 600px);
     border: 1px solid var(--font-color);
     border-radius: 10px;
 }
@@ -206,6 +206,10 @@ footer {
     width: clamp(50px, 10vw, 75px);
     bottom: 30px;
     right: 30px;
+    transition: 0.3s;
+}
+.botao-whatsapp:hover {
+    transform: translateY(-5px);
 }
 footer {
     display: flex;
