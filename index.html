@@ -4,72 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
     <title>Hortiflix</title>
 </head>
 <body>
-    <header>
-        <img class="logo-hortiflix" 
-             src="assets/logoHortiflix.png" 
-             alt="logo do hortifruti hortiflix">
-    </header>
-    <main>
-        <a href="https://wa.me/5521971962252"
+    <div class="botao-de-whatsapp-container">
+        <a href="https://wa.me/5521971962252?text=Vim%20pelo%20site!%20Quais%20produtos%20voc%C3%AAs%20t%C3%AAm%20dispon%C3%ADveis%20hoje%3F"
            target="_blank"
-           rel="noreferrer"
-           class="botao-whatsapp">
-            <img src="assets/icone-whatsapp.png" alt="ícone do botão whatsapp">
+           class="botao-de-whatsapp"
+           rel="noopener noreferrer">
+            <img src="assets/icone-whatsapp.png" alt="ícone do whatsapp">
         </a>
-        <h1>Hortifruti em Venda Das Pedras</h1>
-        <section class="midia">
-            <div class="fotos-do-hortifruti">
-                <img src="assets/fotoExternaDoHortifruti.webp" alt="foto externa do hortifruti" 
-                    class="fotoDoHortifruti externa">
-                <img src="assets/fotoInternaDoHortifruti.webp" alt="foto interna do hortifruti" 
-                    class="fotoDoHortifruti interna">
-            </div> 
-        </section>
-        <section class="produtos secao-verde">
-            <div class="h2-container">
-                <h2>Produtos</h2>
-                <div class="linha-vermelha"></div>
-            </div>
-            <p>Vendemos todo tipo de frutas, verduras e legumes, além de alguns produtos de mercearia.</p>
-            <div class="cestas">
-                <img src="assets/fotoFrutas.png" alt="Foto de uma cesta de frutas" 
-                     class="cesta">
-                <img src="assets/fotoVegetais.webp" alt="Foto de uma cesta de frutas" 
-                     class="cesta">
-            </div>
-        </section>
-        <section class="localizacao">
-            <div class="h2-container">
-                <h2>Localização</h2>
-                <div class="linha-vermelha"></div>
-            </div>
-            <div class="endereco-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.660251834891!2d-42.83761002499753!3d-22.740866031961712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99c1b550e4ba77%3A0xa2a759e06de92f90!2sHortiflix!5e0!3m2!1spt-BR!2sbr!4v1767391263074!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                        class="google-maps"></iframe>
-                <ul>
-                    <li><span>Rua:</span> Comandante Ari Parreiras</li>
-                    <li><span>N°:</span> 509</li>
-                    <li><span>Bairro:</span> Venda das Pedras</li>
-                    <li><span>Cidade/Estado:</span> Itaboraí/RJ</li>
-                    <li><span>Referência:</span> Na rua do Dr. Pizza, em frente ao Bom Preço.</li>
-                </ul>
-            </div>
-        </section>
-        <section class="contato secao-verde">
-            <div class="h2-container">
-                <h2>Contato</h2>
-                <div class="linha-vermelha"></div>
-            </div>
-            <p>WhatsApp: (21)97196-2252</p>
-        </section>
-    </main>
-    <footer>
-        <p>Deus é fiel!</p>
+    </div>
+    <section class="hero">
+        <header>
+            <img src="assets/logoHortiflix.png"
+                alt="Logo do hortifruti"
+                class="logo">
+            <nav class="navegacao">
+                <a href="#sobre">Sobre</a>  
+                <a href="#produtos">Produtos</a>    
+                <a href="#localizacao">Localização</a>  
+                <a href="#contato">Contato</a>  
+            </nav>
+            <div class="menu">☰</div>
+            <a class="cta cta-dentro-do-header"
+               href="https://wa.me/5521971962252?text=Vim%20pelo%20site!%20Quais%20produtos%20voc%C3%AAs%20t%C3%AAm%20dispon%C3%ADveis%20hoje%3F"
+               target="_blank"
+               ]rel="noopener noreferrer">
+                <img src="assets/icone-whatsapp-branco.png"
+                     alt="Ícone de um telefone"
+                     class="icone-telefone">
+                FALE CONOSCO!
+            </a>
+        </header>
+        <div class="texto-do-hero">
+            <h1>Frescor e qualidade para Venda das Pedras e toda Itaboraí</h1>
+            <p>Frutas, legumes e verduras selecionados todos os dias em Venda das Pedras.</p>
+            <p> Hortifruti local em Venda das Pedras, com variedade e atendimento de confiança para o dia a dia.</p>
+            <a class="cta cta-fora-do-header"
+               href="https://wa.me/5521971962252?text=Vim%20pelo%20site!%20Quais%20produtos%20voc%C3%AAs%20t%C3%AAm%20dispon%C3%ADveis%20hoje%3F"
+               target="_blank"
+               rel="noopener noreferrer">
+               Entre em contato!
+            </a>
+        </div>
+    </section>
+    <section class="sobre secao">
+        <img src="assets/pessoaComprando.jpg" alt="pessoa comprando em um hortifruti" class="pessoa-comprando">
+        <div class="texto-container">
+            <h2 id="sobre">Sobre o Hortiflix</h2>
+            <p>
+            No <strong>Hortiflix</strong>, você encontra <strong>frutas, legumes e verduras sempre fresquinhos</strong>, escolhidos com cuidado para chegar com <strong>qualidade</strong> na sua mesa. Trabalhamos com <strong>fornecedores de confiança</strong> e <strong>preços justos</strong>, pensando sempre no melhor para você e sua família.
+            </p>
+            <p>
+            Aqui o <strong>atendimento é simples e rápido</strong>, feito com atenção. Venha conhecer o <strong>Hortiflix</strong> e veja como é fácil <strong>comprar bem e comer melhor</strong> todos os dias.
+            </p>
+        </div>
+    </section>
+    <section id="produtos" class="produtos secao">
+        <div class="texto-container">
+            <h2 id="sobre">Nossos Produtos</h2>
+            <p>
+                <span>Frutas:</span> Frutas <strong>frescas e selecionadas diariamente</strong>, com mais sabor e qualidade. Você encontra opções como <strong>maçã, banana, laranja, mamão e uva</strong>, ideais para o consumo do dia a dia.
+            </p>
+            <p>
+                <span>Verduras & Legumes:</span> Legumes <strong>sempre fresquinhos</strong> para refeições mais saudáveis. Trabalhamos com itens como <strong>batata, tomate, cenoura, cebola e abobrinha</strong>, escolhidos com cuidado para sua mesa.
+            </p>
+            <p>
+                <span>Mercearia:</span> Produtos <strong>essenciais para a sua rotina</strong>, com <strong>variedade e preços justos</strong>. Tudo o que não pode faltar em casa para facilitar o seu dia a dia.
+            </p>
+            </p>
+            <a class="cta cta-dentro-do-header"
+               href="https://wa.me/5521971962252?text=Vim%20pelo%20site!%20Quais%20produtos%20voc%C3%AAs%20t%C3%AAm%20dispon%C3%ADveis%20hoje%3F"
+               rel="noopener noreferrer"
+               target="_blank">
+                TIRE SUAS DÚVIDAS!
+            </a>
+        </div>
+        <img src="assets/imagem-produtos.png" alt="três imagens, uma de frutas, outra de legumes e verduras e a última de produtos de mercearia"
+             class="imagem-produtos">
+    </section>
+    <section id="localizacao" class="localizacao secao">
+        <div class="texto-container">
+            <h2>LOCALIZAÇÃO</h2>
+            <p>
+                Passe no Hortiflix e encontre tudo o que você precisa para comer bem no dia a dia. Produtos frescos, variedade e aquele atendimento de confiança que faz diferença. Sua mesa começa aqui.
+            </p>
+            <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.660251834891!2d-42.83761002499753!3d-22.740866031961712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99c1b550e4ba77%3A0xa2a759e06de92f90!2sHortiflix!5e0!3m2!1spt-BR!2sbr!4v1768005985246!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="texto-container">
+            <h2>RESPONSÁVEL</h2>
+            <p>
+                <b>Nome:</b> Jader de Figueiredo Ribeiro
+            </p>
+        </div>
+        <div id="contato" class="contato">
+            <img src="assets/icone-whatsapp-branco.png" alt="ícone do whatsapp na cor branca."
+                 class="icone-whatsapp-branco"
+                 id="contato">
+            <a href="https://wa.me/5521971962252?text=Vim%20pelo%20site!%20Quais%20produtos%20voc%C3%AAs%20t%C3%AAm%20dispon%C3%ADveis%20hoje%3F"
+               class="cta-whatsapp"
+               rel="noopener noreferrer"
+               target="_blank">
+               WhatsApp
+            </a>
+            <p class="numero-de-whatsapp">21 99184-8292</p>
+        </div>
+        <a class="cta cta-dentro-do-header"
+           href="https://wa.me/5521971962252?text=Vim%20pelo%20site!%20Quais%20produtos%20voc%C3%AAs%20t%C3%AAm%20dispon%C3%ADveis%20hoje%3F"
+           target="_blank"
+           rel="noopener noreferrer">
+            FALE COM A GENTE!
+        </a>
+    </section>
+    <footer class="footer">
+        <p>2026 &copy; Todos os direitos reservados – HORTIFLIX – Desenvolvido por <a href="https://www.instagram.com/italoalulas.dev/" class="desenvolvedor" target="_blank" rel="noopener noreferrer">Ítalo Alulas</a></p>
     </footer>
 </body>
 </html>
