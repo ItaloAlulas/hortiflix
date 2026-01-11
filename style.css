@@ -53,6 +53,7 @@ html, body {
 }
 * {
   font-family: 'Poppins', sans-serif;
+  -webkit-tap-highlight-color: transparent;
   /* border: 1px dotted red; */
 }
 .hero {
@@ -195,7 +196,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: clamp(260px, 60%, 600px);
+  width: clamp(260px, 85vw, 600px);
 }
 h2 {
   font-size: clamp(1rem, 15vw, 2.5rem);
@@ -220,7 +221,7 @@ strong {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: clamp(260px, 60%, 600px);
+  width: clamp(260px, 85vw, 600px);
 }
 span {
   color: red;
@@ -251,11 +252,12 @@ span {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: clamp(100px, 80vw, 550px);
+  width: clamp(100px, 85vw, 550px);
 }
 .google-maps {
   width: clamp(100px, 80vw, 600px);
   height: clamp(225px, 30vh, 250px);
+  border-radius: 10px;
 }
 .icone-whatsapp-branco {
   width: clamp(50px, 10vw, 60px);
@@ -370,14 +372,11 @@ footer p {
     width: 35px;
     height: 35px;
   }
-  .menu.aberto {
-
-  }
   .hero {
     transition: 0.3s;
   }
   .hero.active {
-    height: 810px;
+    height: 830px;
   }
   .texto-do-hero {
     top: 430px;
@@ -403,5 +402,33 @@ footer p {
     padding: 10px 0;
     font-size: 1rem;
     width: 55vw;
+  }
+}
+@media (max-width: 496px) {
+  .texto-do-hero {
+    top: 470px;
+  }
+  .texto-do-hero.active {
+    top: 590px;
+  }
+  .hero {
+    height: 780px;
+  }
+  .hero.active {
+    height: 900px;
+  }
+}
+@media (max-width: 360px) {
+  .texto-do-hero {
+    top: 430px;
+  }
+  .texto-do-hero.active {
+    top: 550px;
+  }
+  .hero {
+    height: 700px;
+  }
+  .hero.active {
+    height: 820px;
   }
 }

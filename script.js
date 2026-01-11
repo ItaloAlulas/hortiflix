@@ -10,4 +10,10 @@ botaoMenu.addEventListener('click', () => {
     textoDoHero.classList.toggle('active')
     hero.classList.toggle('active');
     ctaDentroDoHeader.classList.toggle('hidden')
+
+    if (botaoMenu.classList.contains('aberto')) {
+        botaoMenu.textContent = '✖';
+    } else {
+        botaoMenu.textContent = '☰';
+    }
 })
