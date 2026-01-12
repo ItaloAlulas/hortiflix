@@ -158,19 +158,6 @@ header {
 }
 .menu {
   display: none;
-  cursor: pointer;
-
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 2rem;
-
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(5px);
-  width: 45px;
-  height: 45px;
-  border-radius: 5px;
-  border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
 /* SOBRE */
@@ -226,6 +213,51 @@ strong {
 span {
   color: red;
   font-weight: bold;
+}
+
+/* DEPOIMENTOS */
+
+.depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(245, 245, 245);
+}
+.depoimentos h2 {
+  font-size: clamp(1rem, 9vw, 2.5rem);
+}
+.avaliacoes-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.avaliacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px -5px #999;
+
+  width: clamp(150px, 85vw, 400px);
+  height: clamp(150px, 30vh, 175px);
+}
+.avaliacao .comentario {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: clamp(0.9rem, 4.5vw, 1.2rem);
+  font-weight: bold;
+}
+.avaliacao .nome-do-cliente {
+  font-size: clamp(0.8rem, 3.8vw, 1.2rem);
+}
+.fonte-avaliacoes {
+  font-style: italic;
+  font-size: clamp(0.8rem, 3vw, 1rem);
 }
 
 /* LOCALIZAÇÃO */
@@ -310,7 +342,6 @@ footer p {
 .desenvolvedor:hover {
   border-bottom: 2px solid red;
 }
-
 @media (max-width: 1075px) {
   .navegacao {
     position: absolute;
@@ -338,13 +369,25 @@ footer p {
   }
   .menu {
     display: flex;
+    cursor: pointer;
+
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
   }
   header {
     justify-content: space-evenly;
     padding: 0 25px;
   }
 }
-
 @media (max-width: 600px) {
   .navegacao.active {
     position: absolute;

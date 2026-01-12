@@ -12,7 +12,7 @@ botaoMenu.addEventListener('click', () => {
     ctaDentroDoHeader.classList.toggle('hidden')
 
     if (botaoMenu.classList.contains('aberto')) {
-        botaoMenu.textContent = '✖️';
+        botaoMenu.textContent = '✖';
     } else {
         botaoMenu.textContent = '☰';
     }
